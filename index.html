@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Front-End App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f9;
+    }
+    .app-container {
+      text-align: center;
+      background-color: #282c34;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #61dafb;
+      color: #282c34;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #21a1f1;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <h1>Hello, World!</h1>
+    <p>Welcome to the Sample Front-End Application.</p>
+    <button class="button" onclick="showMessage()">Click Me</button>
+    <p id="message" style="margin-top: 20px; font-size: 18px;"></p>
+  </div>
+
+  <script>
+    function showMessage() {
+      const messageElement = document.getElementById("message");
+      messageElement.textContent = "You clicked the button! Jenkins build successful.";
+    }
+  </script>
+</body>
+</html>
